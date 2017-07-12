@@ -1,0 +1,199 @@
+[
+	{
+	    "id":1,    
+	    "firstname": "bishwash",
+	    "lastname":"sharma",
+	    "email":"20wash.sharma@gmail.com",
+	    "phone":"7862236745",
+	    "location": [
+	                 "Piscataway",
+	    			 "Newyork",
+	                 "Atlanta"
+	     ],
+	     "current_class" : "10th",
+		  "address" : {
+					   "communication": "Marlabs, Piscataway, New Jersey",
+					    "permanent" : "Trivandrum, Kerala, India"
+				},
+		 "marks" : {
+						"english" : "70",
+						"science" : "80",
+						"computers" : "90",
+						"hardware" : "80"
+				}
+
+            },
+            
+            	{
+	    "id":2,    
+	    "firstname": "Ananya",
+	    "lastname":"Dutta",
+	    "email":"20wash.sharma@gmail.com",
+	    "phone":"7862236745",
+	    "location": [
+	                 "Piscataway",
+	    			 "Newyork",
+	                 "Atlanta"
+	     ],
+	     "current_class" : "10th",
+		  "address" : {
+					   "communication": "Marlabs, Piscataway, New Jersey",
+					    "permanent" : "Trivandrum, Kerala, India"
+				},
+		 "marks" : {
+						"english" : "70",
+						"science" : "80",
+						"computers" : "90",
+						"hardware" : "80"
+				}
+
+            },
+            	{
+	    "id":3,    
+	    "firstname": "Arnob",
+	    "lastname":"Saha",
+	    "email":"20wash.sharma@gmail.com",
+	    "phone":"7862236745",
+	    "location": [
+	                 "Piscataway",
+	    			 "Newyork",
+	                 "Atlanta"
+	     ],
+	     "current_class" : "10th",
+		  "address" : {
+					   "communication": "Marlabs, Piscataway, New Jersey",
+					    "permanent" : "Trivandrum, Kerala, India"
+				},
+		 "marks" : {
+						"english" : "70",
+						"science" : "80",
+						"computers" : "90",
+						"hardware" : "80"
+				}
+
+            },
+            	{
+	    "id":4,    
+	    "firstname": "Munni",
+	    "lastname":"Roy",
+	    "email":"20wash.sharma@gmail.com",
+	    "phone":"7862236745",
+	    "location": [
+	                 "Piscataway",
+	    			 "Newyork",
+	                 "Atlanta"
+	     ],
+	     "current_class" : "10th",
+		  "address" : {
+					   "communication": "Marlabs, Piscataway, New Jersey",
+					    "permanent" : "Trivandrum, Kerala, India"
+				},
+		 "marks" : {
+						"english" : "70",
+						"science" : "80",
+						"computers" : "90",
+						"hardware" : "80"
+				}
+
+            },
+            	{
+	    "id":5,    
+	    "firstname": "Arif",
+	    "lastname":"Hasan",
+	    "email":"20wash.sharma@gmail.com",
+	    "phone":"7862236745",
+	    "location": [
+	                 "Piscataway",
+	    			 "Newyork",
+	                 "Atlanta"
+	     ],
+	     "current_class" : "10th",
+		  "address" : {
+					   "communication": "Marlabs, Piscataway, New Jersey",
+					    "permanent" : "Trivandrum, Kerala, India"
+				},
+		 "marks" : {
+						"english" : "70",
+						"science" : "80",
+						"computers" : "90",
+						"hardware" : "80"
+				}
+
+            },
+            
+        {
+	    "id":6,    
+	    "firstname": "Sonu",
+	    "lastname":"Nigam",
+	    "email":"20wash.sharma@gmail.com",
+	    "phone":"7862236745",
+	    "location": [
+	                 "Piscataway",
+	    			 "Newyork",
+	                 "Atlanta"
+	     ],
+	     "current_class" : "10th",
+		  "address" : {
+					   "communication": "Marlabs, Piscataway, New Jersey",
+					    "permanent" : "Trivandrum, Kerala, India"
+				},
+		 "marks" : {
+						"english" : "70",
+						"science" : "80",
+						"computers" : "90",
+						"hardware" : "80"
+				}
+
+            },
+            
+        {
+	    "id":7,    
+	    "firstname": "Adit",
+	    "lastname":"Patel",
+	    "email":"20wash.sharma@gmail.com",
+	    "phone":"7862236745",
+	    "location": [
+	                 "Piscataway",
+	    			 "Newyork",
+	                 "Atlanta"
+	     ],
+	     "current_class" : "10th",
+		  "address" : {
+					   "communication": "Marlabs, Piscataway, New Jersey",
+					    "permanent" : "Trivandrum, Kerala, India"
+				},
+		 "marks" : {
+						"english" : "70",
+						"science" : "80",
+						"computers" : "90",
+						"hardware" : "80"
+				}
+
+            },
+            
+       {
+	    "id":8,    
+	    "firstname": "Anvitha",
+	    "lastname":"Reddy",
+	    "email":"20wash.sharma@gmail.com",
+	    "phone":"7862236745",
+	    "location": [
+	                 "Piscataway",
+	    			 "Newyork",
+	                 "Atlanta"
+	     ],
+	     "current_class" : "10th",
+		  "address" : {
+					   "communication": "Marlabs, Piscataway, New Jersey",
+					    "permanent" : "Trivandrum, Kerala, India"
+				},
+		 "marks" : {
+						"english" : "70",
+						"science" : "80",
+						"computers" : "90",
+						"hardware" : "80"
+				}
+
+            }
+
+]

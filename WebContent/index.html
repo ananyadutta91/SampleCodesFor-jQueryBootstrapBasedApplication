@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Homepage </title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  <link rel="stylesheet" href="style.css"/>
+
+</head>
+<body>
+
+<div class="container">
+<!-- Static navbar -->
+<nav class="navbar navbar-default navbar-fixed-top">
+<div class="container-fluid">
+
+<div class="navbar-header">
+  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+     <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+   </button>            
+  <a class="navbar-brand" href="#"> Student Management System</a>
+</div>  <!-- end of navbar-header -->
+
+<div class="collapse navbar-collapse" id="navbar" >
+ <div class="row allcontrols">
+  <div class="col-md-12">
+   <div class="row ">
+    <div class="form-group">
+<ul class="nav navbar-nav ">
+ <li><button id="addbutton" type="button" class="btn btn-primary" data-toggle="modal" data-target="#squarespaceModal" data-whatever="@mdo">Add</button></li>
+ <li><button id="editbutton" type="button" disabled class="btn btn-primary" data-toggle="modal" data-target="#squarespaceModal" data-whatever="@mdo">EDIT</button></li>
+ <li><button id="deletebutton" type="button" disabled class="btn btn-primary" data-toggle="modal" data-target="#deleteModal" data-whatever="@mdo">DELETE</button></li>
+ <li><button id="viewbutton" type="button" disabled class="btn btn-primary">View</button></li>
+</ul>
+
+ <ul class="nav navbar-nav navbar-right">
+  <li>
+   <form class="navbar-form navbar-right">
+      <div class="input-group">
+       <p>No of rows per page
+            <select id="Numberofpages" class="form-control ">
+              <option>5</option>
+               <option>8</option>
+                 <option>10</option>
+                  <option>15</option>
+                    </select></p>
+                 </div> <!-- end of input-group -->
+              </form>                                         
+   </li>
+  <li>
+ <form class="navbar-form navbar-right">
+      <div class="input-group">
+       <input type="text" class="form-control" placeholder="Search" id="search">
+         <div class="input-group-btn">
+          <button class="btn btn-default" type="submit">
+           <i class="glyphicon glyphicon-search"></i>
+          </button>
+        </div> <!-- end of input-group-btn -->       
+      </div>   <!-- end of input-group -->
+    </form>
+</li>
+</ul> 
+</div> <!-- end of form-group -->
+</div> <!-- end of row -->
+</div> <!-- end of col-md-12 -->
+</div> <!-- end of row all controls -->
+</div> <!-- end of collapse navbar-collapse -->
+</div> <!-- end of container-fluid -->
+</nav> <!-- end of Static navbar -->
+
+    <section >
+       <table id="myTable" class="table sortable paginated">
+          <thead>
+             <tr><th><input class="" id="bulkselect" type="checkbox"/></th><th class="sort-alpha" >First Name<i id="icon1" aria-hidden="true"></i></th><th class="sort-alpha" >Last Name<i id="icon2" aria-hidden="true"></i></th><th class="sort-alpha">email<i id="icon3" aria-hidden="true"></i></th><th class="sort-alpha">Phone<i id="icon4" aria-hidden="true"></i></th><th class="sort-alpha">Location<i id="icon5" aria-hidden="true"></i></th><th class="sort-alpha">Current Class<i id="icon6" aria-hidden="true"></i></th><th class="sort-alpha">Address<i id="icon7" aria-hidden="true"></i></th><th class="sort-alpha">Marks<i id="icon8" aria-hidden="true"></i></th></tr>
+               </thead>
+                 <tbody id="divv">
+                  </tbody>
+                </table> 
+            </section>
+</div> <!-- end of container -->
+
+<!-- line modal -->
+<div class="modal fade" id="squarespaceModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+	<div class="modal-content">
+		<div class="modal-header">
+			<button type="button" class="close" data-toggle="modal" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+			<h4 class="modal-title" id="lineModalLabel">Add Info</h4>
+		</div> <!-- end of modal-header -->
+		
+	<form name="myForm" action="" onsubmit="return addOrUpdateHandler(event)" method="post">
+	 <div class="modal-body">
+         <!-- content goes here -->    
+             <div class="form-group">
+                <label for="firstname">First Name</label>
+                <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Enter First Name">
+              </div>
+              <div class="form-group">
+                <label for="lastname">Last Name</label>
+                <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Enter Last Name">
+              </div>
+              <div class="form-group">
+               <label for="email">Email</label>
+                <input type="text" class="form-control" id="email" name="email" placeholder="Enter Email">
+              </div>
+               <div class="form-group">
+               <label for="location">Location</label>
+                <input type="text" class="form-control" id="location" name="location" placeholder="Enter Location">
+              </div>
+              <div class="form-group">
+               <label for="phone">Phone</label>
+                <input type="text" class="form-control" id="phone" name="phone" placeholder="Enter Phone">
+              </div>  
+              <div class="form-group">
+               <label for="study_class">Class</label>
+                <input type="text" class="form-control" id="study_class" name="study_class" placeholder="Enter Class">
+              </div>     
+              <div class="form-group">
+               <label for="address">Address</label>
+                <input type="text" class="form-control" id="communication" name="communication" placeholder="Enter Communication Address"><br/>
+                <input type="text" class="form-control" id="permanent" name="permanent" placeholder="Enter Permanent Address">
+              </div>  
+              
+               <div class="form-group">
+               <label for="marks">Marks</label>
+                <input type="text" class="form-control" id="english" name="english" placeholder="Enter English Marks"><br/>
+                <input type="text" class="form-control" id="science" name="science" placeholder="Enter Science Marks"><br/>
+                <input type="text" class="form-control" id="computers" name="computers" placeholder="Enter Computers Marks"><br/>
+                <input type="text" class="form-control" id="hardware" name="hardware" placeholder="Enter Hardware Marks"><br/>
+              </div> 
+                   
+						 
+			 </div> <!-- end of modal-body -->
+	          <div class="modal-footer">
+                 <button type="button" class="btn btn-default" data-toggle="modal" data-dismiss="modal">Close</button>
+                 <input id="submitbuttonid" type="submit" data-target="#loginModal" class="btn btn-primary" value="Submit" data-addedit="add"/>
+              </div>      
+           </form> 
+	</div> <!-- end of modal-content -->
+  </div> <!-- end of modal-dialog -->
+</div>   <!-- end of modal fade -->
+  
+  <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content">
+             <div class="modal-header">
+                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                   <h4 class="modal-title" id="">Delete Info</h4>
+                  </div> <!-- end of modal-header -->
+                    <form name="myForm" action="" onsubmit="return deleteSelectedRow(event)" method="post">
+                        <div class="modal-body">
+                            <h4>You are about to delete.Do you want to proceed?</h4>
+                        </div> <!-- end of modal-body -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">NO</button>
+                            <input type="submit" class="btn btn-primary" value="YES">
+                        </div> <!-- end of modal-footer -->
+                    </form>
+                </div> <!-- end of modal-content -->
+            </div>  <!--   end of modal-dialog -->
+        </div>   <!--     end of modal fade -->
+ 
+<script src="validate.js"></script>
+</body>
+</html>
